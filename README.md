@@ -1,6 +1,7 @@
-# Mustika Mebel — Website Toko (GitHub Pages + Supabase)
+# Mebel Mustika — Website Toko (GitHub Pages + Supabase)
 
-Website toko **Mustika Mebel**, Jl. Gatot Subroto, RT.1/RW.6, Bukir, Kec. Gadingrejo, Kota Pasuruan, Jawa Timur 67138.
+Website toko **Mebel Mustika**, Jl. Gatot Subroto, RT.1/RW.6, Bukir, Kec. Gadingrejo, Kota Pasuruan, Jawa Timur 67138.
+Tampilan toko online hijau-putih ala WooCommerce (top bar hijau, header pencarian, Browse Categories, hero sidebar + banner, Kategori Produk asimetris, Produk Pilihan tab Terbaru/Diskon/Terpopuler, spotlight lime, Desain Custom 4 tahap, Blog, footer 4 kolom) — layout terinspirasi toko furniture Jepara online, konten & teks asli Mebel Mustika.
 Jual kursi, almari, meja, sofa, tempat tidur, dan bufet.
 
 - 🌐 **Live:** https://obbyakun2-hue.github.io/mustika-mebel/

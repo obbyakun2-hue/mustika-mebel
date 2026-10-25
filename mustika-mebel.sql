@@ -30,7 +30,7 @@ create table if not exists public.mustika_inquiries (
 
 create table if not exists public.mustika_settings (
   id uuid primary key default gen_random_uuid(),
-  store_name text not null default 'Mustika Mebel',
+  store_name text not null default 'Mebel Mustika',
   tagline text default '',
   whatsapp text default '',
   opening_hours text default '',
@@ -93,10 +93,10 @@ where not exists (select 1 from public.mustika_products limit 1);
 
 -- ---------- SEED: PENGATURAN TOKO (1 baris) ----------
 insert into public.mustika_settings (store_name, tagline, whatsapp, opening_hours, address, about)
-select 'Mustika Mebel',
+select 'Mebel Mustika',
        'Furniture Jati Elegan untuk Rumah Anda',
        '',
        'Setiap hari 08.00 – 20.00 WIB',
        'Jl. Gatot Subroto, RT.1 / RW.6, Bukir, Kec. Gadingrejo, Kota Pasuruan, Jawa Timur 67138',
-       'Mustika Mebel adalah toko furniture di Kota Pasuruan, Jawa Timur. Kami menjual kursi, almari, meja, sofa, tempat tidur, dan bufet — mengutamakan kayu jati & mahoni berkualitas dengan harga bersahabat.'
+       'Mebel Mustika adalah toko furniture di Kota Pasuruan, Jawa Timur. Kami menjual kursi, almari, meja, sofa, tempat tidur, dan bufet — mengutamakan kayu jati & mahoni berkualitas dengan harga bersahabat.'
 where not exists (select 1 from public.mustika_settings limit 1);
