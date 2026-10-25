@@ -74,21 +74,21 @@ create policy "mustika_settings_admin_semua" on public.mustika_settings
 -- ---------- SEED: 12 PRODUK CONTOH ----------
 -- (total stok 57 unit, nilai inventaris Rp186.200.000)
 -- Hanya disisipkan bila tabel produk masih kosong.
-insert into public.mustika_products (nama, kategori, bahan, harga, stok, deskripsi)
+insert into public.mustika_products (nama, kategori, bahan, harga, stok, deskripsi, foto_url)
 select * from (values
-  ('Kursi Santai Jati Klasik','Kursi','Kayu Jati',1850000,8,'Kursi santai ukir klasik, rangka jati solid, finishing melamin halus.'),
-  ('Kursi Makan Jati Set 4','Kursi','Kayu Jati',2750000,6,'Satu set 4 kursi makan jati, jok busa nyaman untuk ruang makan keluarga.'),
-  ('Almari Pakaian 3 Pintu Jati','Almari','Kayu Jati',5500000,3,'Almari 3 pintu dengan cermin, gantungan & laci dalam, engsel kuat.'),
-  ('Almari Pakaian 2 Pintu','Almari','Kayu Mahoni',3900000,4,'Almari 2 pintu mahoni, desain minimalis cocok untuk kamar anak/kost.'),
-  ('Meja Makan Jati 6 Kursi','Meja','Kayu Jati',6800000,2,'Meja makan jati besar + 6 kursi, kokoh untuk keluarga besar.'),
-  ('Meja Kerja Minimalis','Meja','Kayu Mahoni',1950000,10,'Meja kerja/belajar minimalis dengan 2 laci, ringan & rapi.'),
-  ('Meja Rias Jati + Cermin','Meja','Kayu Jati',2400000,6,'Meja rias jati dengan cermin oval dan laci perhiasan.'),
-  ('Sofa 3 Dudukan Premium','Sofa','Kain Premium + Kayu Jati',7500000,2,'Sofa 3 dudukan busa premium, kain halus mudah dibersihkan.'),
-  ('Sofa Bed Multifungsi','Sofa','Busa Premium',3200000,6,'Sofa yang bisa dibuka jadi tempat tidur tamu, praktis & hemat ruang.'),
-  ('Tempat Tidur Queen Minimalis','Tempat Tidur','Kayu Jati',4600000,5,'Dipan queen 160x200 desain minimalis, rangka jati kuat anti goyang.'),
-  ('Dipan Ukir Jepara King','Tempat Tidur','Kayu Jati Ukir',8900000,1,'Dipan king 180x200 ukiran Jepara asli, karya pengrajin pilihan.'),
-  ('Bufet TV Jati','Bufet','Kayu Jati',2300000,4,'Bufet TV jati dengan laci & rak kaca, cocok untuk ruang keluarga.')
-) as v(nama,kategori,bahan,harga,stok,deskripsi)
+  ('Kursi Santai Jati Klasik','Kursi','Kayu Jati',1850000,8,'Kursi santai ukir klasik, rangka jati solid, finishing melamin halus.','https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=900&auto=format&fit=crop'),
+  ('Kursi Makan Jati Set 4','Kursi','Kayu Jati',2750000,6,'Satu set 4 kursi makan jati, jok busa nyaman untuk ruang makan keluarga.','https://images.unsplash.com/photo-1577140917170-285929fb55b7?q=80&w=900&auto=format&fit=crop'),
+  ('Almari Pakaian 3 Pintu Jati','Almari','Kayu Jati',5500000,3,'Almari 3 pintu dengan cermin, gantungan & laci dalam, engsel kuat.','https://images.unsplash.com/photo-1558997519-83ea9252edf8?q=80&w=900&auto=format&fit=crop'),
+  ('Almari Pakaian 2 Pintu','Almari','Kayu Mahoni',3900000,4,'Almari 2 pintu mahoni, desain minimalis cocok untuk kamar anak/kost.','https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=900&auto=format&fit=crop'),
+  ('Meja Makan Jati 6 Kursi','Meja','Kayu Jati',6800000,2,'Meja makan jati besar + 6 kursi, kokoh untuk keluarga besar.','https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?q=80&w=900&auto=format&fit=crop'),
+  ('Meja Kerja Minimalis','Meja','Kayu Mahoni',1950000,10,'Meja kerja/belajar minimalis dengan 2 laci, ringan & rapi.','https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?q=80&w=900&auto=format&fit=crop'),
+  ('Meja Rias Jati + Cermin','Meja','Kayu Jati',2400000,6,'Meja rias jati dengan cermin oval dan laci perhiasan.','https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=900&auto=format&fit=crop'),
+  ('Sofa 3 Dudukan Premium','Sofa','Kain Premium + Kayu Jati',7500000,2,'Sofa 3 dudukan busa premium, kain halus mudah dibersihkan.','https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=900&auto=format&fit=crop'),
+  ('Sofa Bed Multifungsi','Sofa','Busa Premium',3200000,6,'Sofa yang bisa dibuka jadi tempat tidur tamu, praktis & hemat ruang.','https://images.unsplash.com/photo-1540574163026-643ea20ade25?q=80&w=900&auto=format&fit=crop'),
+  ('Tempat Tidur Queen Minimalis','Tempat Tidur','Kayu Jati',4600000,5,'Dipan queen 160x200 desain minimalis, rangka jati kuat anti goyang.','https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=900&auto=format&fit=crop'),
+  ('Dipan Ukir Jepara King','Tempat Tidur','Kayu Jati Ukir',8900000,1,'Dipan king 180x200 ukiran Jepara asli, karya pengrajin pilihan.','https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=900&auto=format&fit=crop'),
+  ('Bufet TV Jati','Bufet','Kayu Jati',2300000,4,'Bufet TV jati dengan laci & rak kaca, cocok untuk ruang keluarga.','https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=900&auto=format&fit=crop')
+) as v(nama,kategori,bahan,harga,stok,deskripsi,foto_url)
 where not exists (select 1 from public.mustika_products limit 1);
 
 -- ---------- SEED: PENGATURAN TOKO (1 baris) ----------
