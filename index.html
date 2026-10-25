@@ -22,13 +22,17 @@ nav.mainnav{display:flex;gap:6px;margin-left:auto;flex-wrap:wrap}
 nav.mainnav a,nav.mainnav button{color:var(--krem);text-decoration:none;background:none;border:1px solid transparent;font:inherit;font-size:.92rem;padding:7px 12px;border-radius:999px;cursor:pointer}
 nav.mainnav a:hover,nav.mainnav button:hover{border-color:var(--kuningan)}
 .btn-admin{background:var(--kuningan)!important;color:#241503!important;font-weight:700}
-.hero{background:linear-gradient(120deg,rgba(43,26,14,.88),rgba(74,47,29,.75)),radial-gradient(circle at 80% 20%,#8a5a2b,transparent 60%);color:var(--krem)}
-.hero-in{max-width:1180px;margin:0 auto;padding:64px 16px 56px}
-.hero h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.08;font-weight:900}
+.hero{background:linear-gradient(105deg,rgba(43,26,14,.93) 30%,rgba(74,47,29,.68) 70%,rgba(74,47,29,.45)),url('https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=1800&auto=format&fit=crop') center/cover no-repeat;color:var(--krem)}
+.hero-in{max-width:1180px;margin:0 auto;padding:88px 16px 76px}
+.hero-badge{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--kuningan2);border:1px solid rgba(212,175,55,.65);padding:6px 13px;border-radius:999px;background:rgba(43,26,14,.45);margin-bottom:18px}
+.hero h1{font-size:clamp(2.2rem,5.5vw,3.8rem);line-height:1.06;font-weight:900;text-shadow:0 2px 18px rgba(0,0,0,.35)}
 .hero h1 em{color:var(--kuningan2);font-style:normal}
-.hero p{margin-top:14px;max-width:640px;font-size:1.05rem;opacity:.92}
-.hero .cta{margin-top:24px;display:flex;gap:10px;flex-wrap:wrap}
-.btn{display:inline-block;border:none;cursor:pointer;font:inherit;font-weight:600;padding:12px 20px;border-radius:12px;text-decoration:none}
+.hero-tagline{font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.3rem,3vw,2rem);font-weight:700;color:var(--kuningan2);margin-top:8px}
+.hero-rule{width:72px;height:4px;border-radius:99px;background:linear-gradient(90deg,var(--kuningan2),var(--kuningan));margin-top:20px}
+.hero p{margin-top:14px;max-width:640px;font-size:1.05rem;opacity:.94}
+.hero .cta{margin-top:26px;display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;border:none;cursor:pointer;font:inherit;font-weight:600;padding:12px 20px;border-radius:12px;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease,filter .15s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(43,26,14,.22);filter:brightness(1.05)}
 .btn-gold{background:linear-gradient(135deg,var(--kuningan2),var(--kuningan));color:#241503}
 .btn-ghost{background:transparent;color:var(--krem);border:1px solid var(--kuningan)}
 .btn-brown{background:var(--walnut);color:var(--krem)}
@@ -37,25 +41,32 @@ nav.mainnav a:hover,nav.mainnav button:hover{border-color:var(--kuningan)}
 .btn-sm{padding:7px 12px;border-radius:9px;font-size:.85rem}
 main{max-width:1180px;margin:0 auto;padding:26px 16px 60px}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:-6px 0 28px}
-.stat{background:var(--putih);border:1px solid var(--krem2);border-top:4px solid var(--kuningan);border-radius:16px;padding:18px;box-shadow:0 4px 18px rgba(74,47,29,.07)}
+.stat{background:var(--putih);border:1px solid var(--krem2);border-top:4px solid var(--kuningan);border-radius:18px;padding:20px 18px;box-shadow:0 6px 22px rgba(74,47,29,.08)}
 .stat .num{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:900;color:var(--walnut)}
 .stat .lbl{font-size:.85rem;color:#7a6248;margin-top:2px}
 .banner{background:#fdf3d7;border:1px solid var(--kuningan);color:#6b4e12;border-radius:12px;padding:13px 16px;margin-bottom:20px;font-size:.93rem}
 section.blok{margin:34px 0}
-section.blok h2{font-size:1.7rem;color:var(--walnut);margin-bottom:6px}
-section.blok .sub{color:#7a6248;margin-bottom:16px}
-.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
-.cat{background:linear-gradient(150deg,var(--walnut2),var(--walnut));color:var(--krem);border-radius:16px;padding:20px 14px;text-align:center;cursor:pointer;border:2px solid transparent}
-.cat:hover,.cat.aktif{border-color:var(--kuningan2)}
-.cat .ic{font-size:2rem}
-.cat .nm{font-family:'Playfair Display',serif;font-weight:700;margin-top:6px}
+section.blok h2{font-size:1.8rem;color:var(--walnut);margin-bottom:6px}
+section.blok h2::after{content:"";display:block;width:58px;height:4px;border-radius:99px;background:linear-gradient(90deg,var(--kuningan2),var(--kuningan));margin-top:8px}
+section.blok .sub{color:#7a6248;margin:10px 0 16px}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:14px}
+.cat{position:relative;height:168px;border-radius:18px;overflow:hidden;cursor:pointer;border:3px solid transparent;background:linear-gradient(150deg,var(--walnut2),var(--walnut));color:var(--krem);box-shadow:0 6px 20px rgba(74,47,29,.13);transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.cat:hover{transform:translateY(-4px);box-shadow:0 12px 26px rgba(74,47,29,.2)}
+.cat.aktif{border-color:var(--kuningan2)}
+.cat .ic{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:3rem}
+.cat img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cat .lapis{position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,26,14,.05) 40%,rgba(43,26,14,.86))}
+.cat .tx{position:absolute;left:14px;right:14px;bottom:12px}
+.cat .nm{font-family:'Playfair Display',serif;font-weight:700;font-size:1.12rem}
+.cat .jml{font-size:.8rem;opacity:.88}
 .toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
 .toolbar input,.toolbar select,.form input,.form select,.form textarea{font:inherit;padding:11px 13px;border:1px solid #d9c8a6;border-radius:11px;background:var(--putih);color:var(--teks)}
 .toolbar input{flex:1;min-width:200px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:16px}
-.card{background:var(--putih);border:1px solid var(--krem2);border-radius:18px;overflow:hidden;box-shadow:0 4px 18px rgba(74,47,29,.07);display:flex;flex-direction:column}
-.card .foto{height:150px;display:flex;align-items:center;justify-content:center;font-size:3.4rem;background:linear-gradient(140deg,var(--krem2),#e2cfa3);overflow:hidden}
-.card .foto img{width:100%;height:100%;object-fit:cover}
+.card{background:var(--putih);border:1px solid var(--krem2);border-radius:18px;overflow:hidden;box-shadow:0 6px 22px rgba(74,47,29,.08);display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(74,47,29,.16)}
+.card .foto{position:relative;height:195px;display:flex;align-items:center;justify-content:center;font-size:3.4rem;background:linear-gradient(140deg,var(--krem2),#e2cfa3);overflow:hidden}
+.card .foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .card .isi{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}
 .card h3{font-size:1.12rem;color:var(--walnut)}
 .badge{align-self:flex-start;font-size:.72rem;font-weight:700;background:var(--krem2);color:var(--walnut2);padding:3px 9px;border-radius:999px}
@@ -68,9 +79,14 @@ section.blok .sub{color:#7a6248;margin-bottom:16px}
 .form input,.form select,.form textarea{width:100%}
 .form textarea{min-height:90px;resize:vertical}
 .sukses{background:#e7f7ec;border:1px solid #1faa55;color:#145c2e;border-radius:12px;padding:14px 16px;margin-top:14px}
-.profil{background:linear-gradient(140deg,var(--walnut),var(--gelap));color:var(--krem);border-radius:20px;padding:28px}
-.profil h2{color:var(--kuningan2)}
-.profil p{margin:8px 0;opacity:.93;max-width:720px}
+.kontak-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:16px}
+@media(max-width:760px){.kontak-grid{grid-template-columns:1fr}}
+.tentang-card{background:var(--putih);border:1px solid var(--krem2);border-radius:20px;padding:28px;box-shadow:0 6px 22px rgba(74,47,29,.08)}
+.tentang-card h3{font-size:1.45rem;color:var(--walnut);margin-bottom:10px}
+.tentang-card p{color:#5c4630;line-height:1.65}
+.profil{background:linear-gradient(140deg,var(--walnut),var(--gelap));color:var(--krem);border-radius:20px;padding:28px;box-shadow:0 8px 26px rgba(43,26,14,.25)}
+.profil h3{font-family:'Playfair Display',Georgia,serif;font-size:1.45rem;color:var(--kuningan2);margin-bottom:12px}
+.profil p{margin:9px 0;opacity:.94;line-height:1.55}
 footer{background:var(--gelap);color:#cbb894}
 .foot-in{max-width:1180px;margin:0 auto;padding:26px 16px;font-size:.9rem;display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between}
 .hidden{display:none!important}
@@ -95,8 +111,10 @@ th{background:var(--walnut);color:var(--krem)}
 </nav></div></header>
 
 <div class="hero"><div class="hero-in">
+<div class="hero-badge">🪑 Toko Mebel &amp; Furniture — Pasuruan</div>
 <h1 id="heroNama">Mustika Mebel</h1>
-<h1><em id="heroTagline">Furniture Jati Elegan untuk Rumah Anda</em></h1>
+<div class="hero-tagline" id="heroTagline">Furniture Jati Elegan untuk Rumah Anda</div>
+<div class="hero-rule"></div>
 <p id="heroTentang">Toko mebel di Pasuruan — kursi, almari, meja, sofa, tempat tidur, dan bufet berkualitas, dibuat dari kayu pilihan dengan finishing rapi.</p>
 <div class="cta"><a class="btn btn-gold" href="#katalog">Lihat Katalog</a><a class="btn btn-ghost" href="#pesan">Pesan / Tanya Dulu</a></div>
 </div></div>
@@ -111,7 +129,7 @@ th{background:var(--walnut);color:var(--krem)}
 <div class="stat"><div class="num" id="stTipis">–</div><div class="lbl">Stok Menipis (≤3)</div></div>
 </div>
 
-<section class="blok"><h2>Kategori</h2><p class="sub">Klik kategori untuk menyaring katalog.</p>
+<section class="blok"><h2>Kategori Pilihan</h2><p class="sub">Klik kategori untuk menyaring katalog.</p>
 <div class="cats" id="cats"></div></section>
 
 <section class="blok" id="katalog"><h2>Katalog Produk</h2><p class="sub">Harga &amp; stok contoh — bisa diubah pemilik lewat Menu Admin setelah data live aktif.</p>
@@ -129,16 +147,19 @@ th{background:var(--walnut);color:var(--krem)}
 <div id="pesanHasil"></div>
 </form></section>
 
-<section class="blok" id="tentang"><div class="profil">
-<h2 id="tentangJudul">Tentang Mustika Mebel</h2>
-<p id="tentangIsi">Mustika Mebel adalah toko furniture di Kota Pasuruan, Jawa Timur. Kami menjual kursi, almari, meja, sofa, tempat tidur, dan bufet — mengutamakan kayu jati &amp; mahoni berkualitas dengan harga bersahabat.</p>
+<section class="blok" id="tentang"><h2>Tentang &amp; Lokasi</h2><p class="sub">Kenali Mustika Mebel lebih dekat, atau langsung kunjungi toko kami.</p>
+<div class="kontak-grid">
+<div class="tentang-card"><h3 id="tentangJudul">Tentang Mustika Mebel</h3>
+<p id="tentangIsi">Mustika Mebel adalah toko furniture di Kota Pasuruan, Jawa Timur. Kami menjual kursi, almari, meja, sofa, tempat tidur, dan bufet — mengutamakan kayu jati &amp; mahoni berkualitas dengan harga bersahabat.</p></div>
+<div class="profil"><h3>Hubungi &amp; Kunjungi Kami</h3>
 <p>📍 <span id="alamatToko">Jl. Gatot Subroto, RT.1 / RW.6, Bukir, Kec. Gadingrejo, Kota Pasuruan, Jawa Timur 67138</span></p>
 <p>🕘 Jam buka: <span id="jamBuka">Setiap hari 08.00 – 20.00 WIB</span></p>
 <p>📱 WhatsApp: <span id="waToko">— isi di Pengaturan Toko (Menu Admin)</span></p>
 <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
 <a class="btn btn-gold" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Mustika+Mebel+Jl.+Gatot+Subroto+Bukir+Gadingrejo+Kota+Pasuruan">🗺️ Rute Google Maps</a>
 <a class="btn btn-ghost hidden" id="btnWaProfil" target="_blank" rel="noopener">💬 Chat WhatsApp</a>
-</div></div></section>
+</div></div>
+</div></section>
 </main>
 
 <footer><div class="foot-in"><div>© Mustika Mebel — Pasuruan, Jawa Timur</div><div>Kursi • Almari • Meja • Sofa • Tempat Tidur • Bufet</div></div></footer>
@@ -209,6 +230,15 @@ const KATEGORI = [
  {nama:"Sofa", ikon:"🛋️"}, {nama:"Tempat Tidur", ikon:"🛏️"}, {nama:"Bufet", ikon:"📺"}
 ];
 const IKON_KAT = Object.fromEntries(KATEGORI.map(k=>[k.nama,k.ikon]));
+// Foto asli per kategori (dipakai di showcase kategori & kartu produk bila produk belum punya foto sendiri)
+const FOTO_KAT = {
+ "Kursi":"https://images.unsplash.com/photo-1592078615290-033ee584e267?q=80&w=900&auto=format&fit=crop",
+ "Almari":"https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=900&auto=format&fit=crop",
+ "Meja":"https://images.unsplash.com/photo-1617806118233-18e1de247200?q=80&w=900&auto=format&fit=crop",
+ "Sofa":"https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=900&auto=format&fit=crop",
+ "Tempat Tidur":"https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=900&auto=format&fit=crop",
+ "Bufet":"https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?q=80&w=900&auto=format&fit=crop"
+};
 // 12 produk contoh (sama seperti seed SQL) — dipakai saat tabel Supabase belum dibuat
 const PRODUK_CONTOH = [
  {id:"c1", nama:"Kursi Santai Jati Klasik", kategori:"Kursi", bahan:"Kayu Jati", harga:1850000, stok:8, deskripsi:"Kursi santai ukir klasik, rangka jati solid, finishing melamin halus.", foto_url:""},
@@ -243,7 +273,7 @@ function renderStats(){
 function renderCats(){
   $("cats").innerHTML = KATEGORI.map(k=>{
     const jml = produk.filter(p=>p.kategori===k.nama).length;
-    return `<div class="cat ${katAktif===k.nama?"aktif":""}" data-kat="${esc(k.nama)}"><div class="ic">${k.ikon}</div><div class="nm">${esc(k.nama)}</div><div style="font-size:.8rem;opacity:.85">${jml} produk</div></div>`;
+    return `<div class="cat ${katAktif===k.nama?"aktif":""}" data-kat="${esc(k.nama)}"><div class="ic">${k.ikon}</div><img src="${FOTO_KAT[k.nama]||""}" alt="${esc(k.nama)}" loading="lazy" onerror="this.remove()"><div class="lapis"></div><div class="tx"><div class="nm">${esc(k.nama)}</div><div class="jml">${jml} produk</div></div></div>`;
   }).join("");
   document.querySelectorAll(".cat").forEach(el=>el.onclick=()=>{ katAktif = katAktif===el.dataset.kat ? "" : el.dataset.kat; $("filterKat").value = katAktif; renderCats(); renderProduk(); });
 }
@@ -251,7 +281,7 @@ function renderProduk(){
   const q = $("cari").value.trim().toLowerCase();
   const list = produk.filter(p => (!katAktif || p.kategori===katAktif) && (!q || (p.nama+" "+p.bahan+" "+p.kategori).toLowerCase().includes(q)));
   $("gridProduk").innerHTML = list.map(p=>`
-   <div class="card"><div class="foto">${p.foto_url ? `<img src="${esc(p.foto_url)}" alt="${esc(p.nama)}" loading="lazy" onerror="this.remove()">` : (IKON_KAT[p.kategori]||"🪑")}</div>
+   <div class="card"><div class="foto"><span>${IKON_KAT[p.kategori]||"🪑"}</span><img src="${esc(p.foto_url || FOTO_KAT[p.kategori] || "")}" alt="${esc(p.nama)}" loading="lazy" onerror="this.remove()"></div>
    <div class="isi"><span class="badge">${esc(p.kategori)} • ${esc(p.bahan||"Kayu pilihan")}</span>
    <h3>${esc(p.nama)}</h3><div class="harga">${rupiah(p.harga)}</div>
    <div class="stok ${Number(p.stok)<=3?"tipis":""}">${Number(p.stok)<=0?"Stok habis":Number(p.stok)<=3?"⚠️ Stok menipis: "+p.stok:"Stok: "+p.stok}</div>
